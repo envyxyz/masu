@@ -1775,7 +1775,7 @@ II: Mod Vote */
 .weapIcon[style*="1"] {
     opacity: 1 !important;
     height: 70px;
-	transform: translateY(0px) rotate(5deg)
+    transform: translateY(0px) rotate(0deg)
 }
 
 #weapIconMel {
@@ -2166,4 +2166,19 @@ i[style*="color:#40C4FF"]::before {
 	position: unset;
 	transform: unset;
 	padding: 10px
+}
+
+.killStreakItem{
+    background-color: var(--background)!important
+}
+
+#killStreakHolder{
+    position: fixed;
+    right: 20px;
+    bottom: 150px
+}
+
+.killStreakCnt,
+.killStreakItem>span{
+    display: none!important;
 }
