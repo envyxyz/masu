@@ -7,6 +7,15 @@
     display: none!important
 }
 
+#mapInfo::after{
+    content: 'CSS by Envy#9335';
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    width: max-content
+}
+
 /* Headers */
 
 .headerBar{
