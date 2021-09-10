@@ -2116,3 +2116,54 @@ i[style*="color:#40C4FF"]::before {
 .menBtnIcn{
 	display: none!important
 }
+
+/* first day update */
+
+.progressBarInner,
+.xpBarB,
+.chalXPBarC {
+	height: 100%;
+	background-image: linear-gradient(to right, var(--accent-color), var(--accent-color), 94%, white);
+}
+
+#startServBtn[style] {
+	visibility: hidden;
+}
+
+#startServBtn[style]::before {
+	content: 'Start Game';
+	position: absolute;
+	background: var(--background)!important;
+	color: var(--text)!important;
+	border-radius: 0px!important;
+	transition-duration: 250ms!important;
+	box-shadow: 0 0 0 black!important;
+	padding: 12px;
+	padding-right: 90px;
+	padding-left: 78.1px;
+	visibility: visible;
+	top: 0;
+	right: 0;
+}
+
+#startServBtn[style]:hover::before {
+	background: var(--background)!important;
+	color: var(--accent)!important;
+	box-shadow: 0 0 0 black!important
+}
+
+#instructions{
+	transform: unset;
+}
+
+#instructions::after{
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%) scale(1.5)
+}
+
+#uiBase.onCompMenu #timerDisplay{
+	position: unset;
+	transform: unset;
+	padding: 10px
+}
