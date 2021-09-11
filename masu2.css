@@ -4,7 +4,9 @@
 /* Rem */
 
 #mainLogo,
-#mLevelCont {
+#mLevelCont,
+#ammoMax,
+#timerIcon{
 	display: none!important
 }
 
@@ -1795,7 +1797,7 @@ II: Mod Vote */
 #weapDisplay {
 	position: fixed;
 	left: unset;
-	right: calc(50% - 60px);
+	right: calc(50% - 10px);
 	transform: translateX(50%)!important;
 	bottom: 50px
 }
