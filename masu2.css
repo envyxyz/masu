@@ -306,6 +306,18 @@ input:checked+.sliderSml {
 	height: 162px
 }
 
+.pSt{
+    	font-size: 25px!important;
+    	width: fit-content;
+    	padding: 51px
+}
+
+.pSt strong{
+	font-size: 26px;
+    	line-height: 55px
+}
+
+
 #profilePicM+div+div+.xpBar {
 	position: fixed;
 	width: calc(100% - 525px);
