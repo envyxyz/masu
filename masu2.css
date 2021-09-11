@@ -6,7 +6,8 @@
 #mainLogo,
 #mLevelCont,
 #ammoMax,
-#timerIcon{
+#timerIcon,
+#ammoIcon{
 	display: none!important
 }
 
@@ -1799,7 +1800,7 @@ II: Mod Vote */
 	left: unset;
 	right: calc(50% - 10px);
 	transform: translateX(50%)!important;
-	bottom: 50px
+	bottom: 20px
 }
 
 .weapIcon {
