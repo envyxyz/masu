@@ -1,5 +1,55 @@
 /* Part I : UI */
 
+#initLoader {
+    background-color: var(--background);
+}
+
+#loadHeader {
+    content: url(https://media.discordapp.net/attachments/886234180437049425/888719153492537374/masu.png)
+}
+
+#loadInfoRHolder {
+    color: #fff;
+    font-size: 0;
+    background-color: #000;
+    padding: 4px 8px;
+    box-shadow: 4px 4px var(--accent);
+}
+
+#loadTipsHolder {
+    color: var(--text-color);
+    font-size: 0;
+}
+
+#loadTipsHolder::before {
+    content: "CSS by Envy | Loading code by tae#4444";
+    display: block;
+    font-size: 24px;
+}
+
+.lC-cube {
+    display: none;
+}
+
+#lC-cont::after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    border: 4px outset var(--accent);
+    border-radius: 50%;
+    animation: loading-ring 2.5s ease-in-out infinite;
+}
+
+@keyframes loading-ring {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* Rem */
 
 #mainLogo,
