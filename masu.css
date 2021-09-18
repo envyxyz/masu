@@ -22,7 +22,7 @@
 }
 
 #loadTipsHolder::before {
-    content: "CSS by Envy | Loading code by tae#4444";
+    content: "CSS by Envy | Loading screen by tae#4444";
     display: block;
     font-size: 24px;
 }
