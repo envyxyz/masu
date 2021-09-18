@@ -9,11 +9,7 @@
 }
 
 #loadInfoRHolder {
-    color: #fff;
     font-size: 0;
-    background-color: #000;
-    padding: 4px 8px;
-    box-shadow: 4px 4px var(--accent);
 }
 
 #loadTipsHolder {
