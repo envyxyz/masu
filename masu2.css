@@ -1,5 +1,11 @@
 /* Part I : UI */
 
+#chatList{
+  background-color: transparent;
+  -webkit-mask-image: linear-gradient(0deg, rgba(0, 0, 0, 1.0) -20%, transparent);;
+  mask-image: linear-gradient(0deg, rgba(0, 0, 0, 1.0), transparent);
+}
+
 #initLoader {
     background-color: var(--background);
 }
