@@ -2213,7 +2213,7 @@ i[style*="color:#40C4FF"]::before {
 }
 
 #instructions::after {
-	content: 'Masu';
+	content: '';
 	visibility: visible;
 	display: block;
 	color: var(--accent);
