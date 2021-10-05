@@ -54,12 +54,13 @@
 }
 
 #mapInfo::after{
-    content: 'CSS by Envy#9335';
+    content: "Lazer's CSS by Envy#9335" "ㅤ" url(https://media.discordapp.net/attachments/885577013031731240/894893777158823936/imageedit_3_6922545820.gif);
+    font-size: 20px;
     display: block;
     position: fixed;
     bottom: 0;
-    right: 15px;
-    width: max-content
+    right: 50px;
+    bottom: 50px;
 }
 
 /* Headers */
@@ -266,7 +267,7 @@
     z-index: 9999999999999;
 }
 
-#spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
+/* #spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
 	color: transparent !important;
 }
 
@@ -313,7 +314,7 @@
     bottom: 0;
     right: 0;
     z-index: -1;
-}*/
+}
 
 input:checked+.sliderSml::before {
 	content: "観戦";
@@ -335,7 +336,58 @@ input:checked+.sliderSml {
 	opacity: 1;
 	background-color: transparent;
 }
+ */
 
+#spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
+	color: transparent !important;
+}
+
+#spectButton .switchsml {
+	margin: 0;
+	position: absolute;
+	line-height: 10px
+}
+
+.sliderSml {
+	opacity: 1;
+}
+
+#uiBase.onMenu #spectButton:hover {
+	transform: scale(0.95) translateY(0) translateX(-51%);
+	color: #000
+}
+
+.sliderSml::before {
+	content: "visibility";
+	font-size: 35px;
+	color: var(--accent);
+	font-family: 'Material Icons Outlined';
+	padding: 0!important;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	line-height: 24px;
+	right: -40%;
+	left: unset;
+	background-color: transparent;
+	transition-duration: 350ms
+}
+
+input:checked+.sliderSml::before {
+	content: "visibility_off";
+	color: #7a7a7a;
+	transform: translateX(0px);
+}
+
+input:checked+.sliderSml {
+	background-color: transparent !important;
+}
+
+.sliderSml {
+	opacity: 1;
+	background-color: transparent;
+}
 /* Profile */
 
 .setBodH[style*="width:680px"]{
@@ -2146,19 +2198,6 @@ i[style*="color:#40C4FF"]::before {
     visibility: hidden
 }
 
-#instructions::after{
-	content: '';
-	visibility: visible;
-	display: block;
-	color: var(--accent);
-	transform: scale(2) translateX(-45%);
-	position: fixed;
-	bottom: calc(50% - 100px);
-	left: 65%;
-    text-shadow: 0px -1px 0px black,0px 1px 0px black,1px 0px 0px black,-1px 0px 0px black,1px 1px 0px black,-1px 1px 0px black,1px -1px 0px black,
-    -1px -1px 0px black!Important;
-}
-
 .menBtnIcn{
 	display: none!important
 }
@@ -2169,7 +2208,7 @@ i[style*="color:#40C4FF"]::before {
 .xpBarB,
 .chalXPBarC {
 	height: 100%;
-	background-image: linear-gradient(to right, var(--accent-color), var(--accent-color), 94%, white);
+	background-image: linear-gradient(to right, var(--accent), var(--accent), 94%, white);
 }
 
 #startServBtn[style] {
