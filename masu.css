@@ -59,8 +59,8 @@
     display: block;
     position: fixed;
     bottom: 0;
-    right: 50px;
-    bottom: 50px;
+    right: 0px;
+    bottom: 3px;
 }
 
 /* Headers */
@@ -2267,3 +2267,4 @@ i[style*="color:#40C4FF"]::before {
 .killStreakItem>span{
     display: none!important;
 }
+
