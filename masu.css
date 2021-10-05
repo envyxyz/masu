@@ -1,3 +1,4 @@
+
 /* Part I : UI */
 
 #initLoader {
@@ -54,7 +55,7 @@
 }
 
 #mapInfo::after{
-    content: "Lazer's CSS by Envy#9335" "ㅤ" url(https://media.discordapp.net/attachments/885577013031731240/894893777158823936/imageedit_3_6922545820.gif);
+    content: "lazerz8 CSS by Envy#9335" "ㅤ" url(https://media.discordapp.net/attachments/885577013031731240/894893777158823936/imageedit_3_6922545820.gif);
     font-size: 20px;
     display: block;
     position: fixed;
@@ -260,83 +261,13 @@
 /* Spectate */
 
 #uiBase.onMenu #spectButton {
-	width: 169px;
-    height: 150px;
     top: 200px;
-    left: 50%;
+    RIGHT: unset;
+    left: 49%;
     z-index: 9999999999999;
+    transform: translateX(50%);
+    transition-duration: 350ms;
 }
-
-/* #spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
-	color: transparent !important;
-}
-
-#spectButton .switchsml {
-	margin: 0;
-	position: absolute;
-    line-height: 10px
-}
-
-.sliderSml {
-	opacity: 1;
-}
-
-.sliderSml:hover::before{
-	transform: scale(0.91);
-	color: #fff
-}
-
-.sliderSml::before {
-	content: "観客";
-	font-size: 25px;
-	color: rgb(255 255 255 / 0.7);
-	position: fixed;
-	width: 110px;
-	padding-left: 58px;
-	height: 150px;
-	background-color: transparent;
-	line-height: 150px;
-    bottom: 0;
-    right: 0;
-    left: unset;
-    border-radius: 0;
-    transition-duration: var(--duration);
-	text-shadow: 0px -1px 0px black,0px 1px 0px black,1px 0px 0px black,-1px 0px 0px black,1px 1px 0px black,-1px 1px 0px black,1px -1px 0px black,
-    -1px -1px 0px black!Important;
-}
-/*
-.sliderSml::after{
-	content: "";
-	position: fixed;
-	width: 180px;
-	height: 150px;
-	background-color: red;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
-
-input:checked+.sliderSml::before {
-	content: "観戦";
-	color: var(--accent);
-	transform: translateX(-1px);
-	text-shadow: 0px -1px 0px black,0px 1px 0px black,1px 0px 0px black,-1px 0px 0px black,1px 1px 0px black,-1px 1px 0px black,1px -1px 0px black,
-    -1px -1px 0px black!Important;
-}
-
-input:checked+.sliderSml:hover:before {
-	transform: translateX(-1px) scale(0.91);
-}
-
-input:checked+.sliderSml {
-	background-color: transparent !important;
-}
-
-.sliderSml {
-	opacity: 1;
-	background-color: transparent;
-}
- */
 
 #spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
 	color: transparent !important;
@@ -353,7 +284,7 @@ input:checked+.sliderSml {
 }
 
 #uiBase.onMenu #spectButton:hover {
-	transform: scale(0.95) translateY(0) translateX(-51%);
+	transform: scale(0.95) translateY(0) translateX(30PX);
 	color: #000
 }
 
@@ -362,14 +293,6 @@ input:checked+.sliderSml {
 	font-size: 35px;
 	color: var(--accent);
 	font-family: 'Material Icons Outlined';
-	padding: 0!important;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	text-align: center;
-	line-height: 24px;
-	right: -40%;
-	left: unset;
 	background-color: transparent;
 	transition-duration: 350ms
 }
