@@ -1,17 +1,11 @@
 /* Part I : UI */
 
-#chatList{
-  background-color: rgb(0 0 0 / 0.47);
-  -webkit-mask-image: linear-gradient(0deg, rgba(0, 0, 0, 1.0) 5%, #00000030 30%, transparent 50%);
-  mask-image: linear-gradient(0deg, rgba(0, 0, 0, 1.0), transparent);
-}
-
 #initLoader {
-    background-color: var(--background);
+    background-color: #000;
 }
 
 #loadHeader {
-    content: url(https://media.discordapp.net/attachments/886234180437049425/888719153492537374/masu.png)
+    content: url(https://cdn.discordapp.com/attachments/885577013031731240/894872157648203796/Lazers_full_logo.gif)
 }
 
 #loadInfoRHolder {
