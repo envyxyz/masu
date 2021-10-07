@@ -1522,7 +1522,7 @@ II: Mod Vote */
 }
 
 #chatList[style*="max-height"] {
-	max-height: 450px!important;
+	max-height: 150px!important;
 	border-radius: 0!important
 }
 
