@@ -57,15 +57,15 @@
 	display: none!important
 }
 
-#mapInfo::after {
-	content: 'CSS by Envy#9335';
-	display: block;
-	position: fixed;
-	bottom: 0;
-	right: 15px;
-	width: max-content
+#mapInfo::after{
+    content: "lazerz8 CSS by Envy#9335" "ㅤ" url(https://media.discordapp.net/attachments/885577013031731240/894893777158823936/imageedit_3_6922545820.gif);
+    font-size: 20px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    bottom: 3px;
 }
-
 
 /* Headers */
 
@@ -267,11 +267,12 @@
 /* Spectate */
 
 #uiBase.onMenu #spectButton {
-	width: 169px;
-	height: 150px;
-	top: 200px;
-	left: 50%;
-	z-index: 9999999999999;
+    top: 200px;
+    RIGHT: unset;
+    left: 49%;
+    z-index: 9999999999999;
+    transform: translateX(50%);
+    transition-duration: 350ms;
 }
 
 #spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
@@ -288,51 +289,24 @@
 	opacity: 1;
 }
 
-.sliderSml:hover::before {
-	transform: scale(0.91);
-	color: #fff
+#uiBase.onMenu #spectButton:hover {
+	transform: scale(0.95) translateY(0) translateX(30PX);
+	color: #000
 }
 
 .sliderSml::before {
-	content: "観客";
-	font-size: 25px;
-	color: rgb(255 255 255 / 0.7);
-	position: fixed;
-	width: 110px;
-	padding-left: 58px;
-	height: 150px;
+	content: "visibility";
+	font-size: 35px;
+	color: var(--accent);
+	font-family: 'Material Icons Outlined';
 	background-color: transparent;
-	line-height: 150px;
-	bottom: 0;
-	right: 0;
-	left: unset;
-	border-radius: 0;
-	transition-duration: var(--duration);
-	text-shadow: 0px -1px 0px black, 0px 1px 0px black, 1px 0px 0px black, -1px 0px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black, -1px -1px 0px black!Important;
+	transition-duration: 350ms
 }
-
-
-/*
-.sliderSml::after{
-	content: "";
-	position: fixed;
-	width: 180px;
-	height: 150px;
-	background-color: red;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}*/
 
 input:checked+.sliderSml::before {
-	content: "観戦";
-	color: var(--accent);
-	transform: translateX(-1px);
-	text-shadow: 0px -1px 0px black, 0px 1px 0px black, 1px 0px 0px black, -1px 0px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black, -1px -1px 0px black!Important;
-}
-
-input:checked+.sliderSml:hover:before {
-	transform: translateX(-1px) scale(0.91);
+	content: "visibility_off";
+	color: #7a7a7a;
+	transform: translateX(0px);
 }
 
 input:checked+.sliderSml {
@@ -343,8 +317,6 @@ input:checked+.sliderSml {
 	opacity: 1;
 	background-color: transparent;
 }
-
-
 /* Profile */
 
 .setBodH[style*="width:680px"] {
