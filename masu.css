@@ -1476,9 +1476,9 @@ II: Mod Vote */
     transform: translateY(50%) translateX(0px);
 }
 
-#chatList[style*="max-height"]{
-    max-height: 450px!important;
-    border-radius: 0!important
+#chatList[style*="max-height"] {
+	max-height: 150px!important;
+	border-radius: 0!important
 }
 
 .chatMsg[style*="#fc03ec"]{
