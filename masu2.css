@@ -1,82 +1,70 @@
-/* Part I : UI */
-
 #initLoader {
-    background-color: #000;
+	background-color: #000;
 }
 
 #loadHeader {
-    content: url(https://cdn.discordapp.com/attachments/885577013031731240/894872157648203796/Lazers_full_logo.gif)
+	content: url(https://cdn.discordapp.com/attachments/885577013031731240/894872157648203796/Lazers_full_logo.gif);
 }
 
 #loadInfoRHolder {
-    font-size: 0;
+	font-size: 0;
 }
 
 #loadTipsHolder {
-    color: var(--text-color);
-    font-size: 0;
+	color: var(--text-color);
+	font-size: 0;
 }
 
 #loadTipsHolder::before {
-    content: "CSS by Envy | Loading screen by tae#4444";
-    display: block;
-    font-size: 24px;
+	content: "CSS by Envy | Loading screen by tae#4444";
+	display: block;
+	font-size: 24px;
 }
 
 .lC-cube {
-    display: none;
+	display: none;
 }
 
 #lC-cont::after {
-    content: " ";
-    display: block;
-    width: 64px;
-    height: 64px;
-    border: 4px outset var(--accent);
-    border-radius: 50%;
-    animation: loading-ring 2.5s ease-in-out infinite;
+	content: " ";
+	display: block;
+	width: 64px;
+	height: 64px;
+	border: 4px outset var(--accent);
+	border-radius: 50%;
+	animation: loading-ring 2.5s ease-in-out infinite;
 }
 
 @keyframes loading-ring {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
-
-/* Rem */
-
-#mainLogo,
-#mLevelCont,
-#ammoMax,
-#timerIcon,
-#ammoIcon{
-	display: none!important
+#mainLogo, #mLevelCont, #ammoMax, #timerIcon, #ammoIcon {
+	display: none!important;
 }
 
-#mapInfo::after{
-    content: "lazerz8 CSS by Envy#9335" "ㅤ" url(https://media.discordapp.net/attachments/885577013031731240/894893777158823936/imageedit_3_6922545820.gif);
-    font-size: 20px;
-    display: block;
-    position: fixed;
-    bottom: 0;
-    right: 0px;
-    bottom: 3px;
+#mapInfo::after {
+	content: "lazerz8 CSS by Envy#9335" "ㅤ" url(https://media.discordapp.net/attachments/885577013031731240/894893777158823936/imageedit_3_6922545820.gif);
+	font-size: 20px;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	right: 0px;
+	bottom: 3px;
 }
-
-/* Headers */
 
 .headerBar {
 	padding: 0;
 	height: 150px;
 	border-radius: 0;
-	/*background-color: var(--background);
-    box-shadow: inset 0px 0px 175px 2px var(--aesthetics);*/
 	background: transparent!important;
-	z-index: 1
+	z-index: 1;
 }
 
 .headerBarRight {
@@ -95,7 +83,7 @@
 }
 
 #menuKRCount {
-	margin-left: 50px
+	margin-left: 50px;
 }
 
 #menuServerInfoContainer {
@@ -107,21 +95,21 @@
 	font-size: 0px;
 	position: fixed;
 	top: 0;
-	right: 0
+	right: 0;
 }
 
 #menuFPS {
 	font-size: 22px;
-	color: var(--accent)!important
+	color: var(--accent)!important;
 }
 
 #menuPingDisplay {
-	display: none
+	display: none;
 }
 
 .headerBarRight:hover>#menuServerInfoContainer>#menuRegionLabel {
 	color: #fff;
-	transform: scale(.91)
+	transform: scale(.91);
 }
 
 .headerBarLeft {
@@ -141,7 +129,7 @@
 
 .headerBarLeft:hover>#menuUsernameContainer>#menuAccountUsername {
 	transition-delay: 200ms;
-	opacity: 1
+	opacity: 1;
 }
 
 #menuMiniProfilePic {
@@ -163,30 +151,30 @@
 	border-radius: 0;
 	left: -72px;
 	top: 70px;
-	transform: rotate(-90deg)
+	transform: rotate(-90deg);
 }
 
 .progressBarInner {
 	background: var(--accent);
-	border-radius: 0
+	border-radius: 0;
 }
 
 .verticalSeparator {
 	background: linear-gradient(0deg, rgb(212 0 179 / 0) 0%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 60%, rgb(255 0 0 / 0) 100%);
-	width: 1px!important
+	width: 1px!important;
 }
 
 #mailContainer {
-	left: 40px
+	left: 40px;
 }
 
 #mailIcon.material-icons {
-	font-size: 0!important
+	font-size: 0!important;
 }
 
 #mailIcon.material-icons::after {
 	content: 'inbox';
-	font-size: 32px
+	font-size: 32px;
 }
 
 .button.lgn {
@@ -199,35 +187,29 @@
 	height: 150px;
 	line-height: 90px;
 	text-shadow: 0px -1.6px 0px black, 0px 1.6px 0px black, 2px 0px 0px black, -2px 0px 0px black, 1.6px 2px 0px black, -1.6px 2px 0px black, 1.6px -2px 0px black, -1.6px -2px 0px black !important;
-	opacity: 0.7
+	opacity: 0.7;
 }
 
 .button.lgn:hover {
-	opacity: 1
+	opacity: 1;
 }
-
-
-/* Centers */
-
-
-/* Menu Window */
 
 #windowHolder {
 	background-color: #02020240 !important;
 	display: block !important;
 	filter: opacity(0);
 	transition-duration: 350ms;
-	visibility: hidden
+	visibility: hidden;
 }
 
 #windowHolder[style*="block"] {
 	filter: opacity(1);
 	transition-duration: 350ms;
-	visibility: visible
+	visibility: visible;
 }
 
 #mapInfoHolder {
-	z-index: 9
+	z-index: 9;
 }
 
 #menuWindow {
@@ -246,32 +228,16 @@
 	background-color: transparent;
 }
 
-
-/*
-#windowCloser{
-	position: absolute;
-	height: 80.6%;
-	transform: translate(50%,0);
-	top: 150px;
-	left: -50%;
-}*/
-
 .material-icons[style*="color:#fbc02d;"] {
-	color: var(--accent)!important
+	color: var(--accent)!important;
 }
 
-
-/* Spectate [moved bot right] */
-
-
-/* Spectate */
-
 #uiBase.onMenu #spectButton {
-    top: 200px;
-    right: 50%;
-    z-index: 9999999999999;
-    transform: translateX(-50%);
-    transition-duration: 350ms;
+	top: 200px;
+	right: 50%;
+	z-index: 9999999999999;
+	transform: translateX(-50%);
+	transition-duration: 350ms;
 	background-color: transparent;
 	width: max-content;
 	text-align: center;
@@ -283,9 +249,9 @@
 	color: transparent !important;
 }
 
-.switchsml{
+.switchsml {
 	position: relative;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 .sliderSml {
@@ -307,7 +273,7 @@
 	margin: 0 26px;
 	text-align: center;
 	position: relative;
-	transition-duration: 350ms;	
+	transition-duration: 350ms;
 }
 
 input:checked+.sliderSml::before {
@@ -317,28 +283,25 @@ input:checked+.sliderSml::before {
 	background: transparent!important;
 }
 
-input:checked+.sliderSml{
-	background: transparent!important
+input:checked+.sliderSml {
+	background: transparent!important;
 }
-
-/* Profile */
 
 .setBodH[style*="width:680px"] {
 	width: calc(100% - 265px)!Important;
-	height: 162px
+	height: 162px;
 }
 
-.pSt{
-    	font-size: 25px!important;
-    	width: fit-content;
-    	padding: 51px
+.pSt {
+	font-size: 25px!important;
+	width: fit-content;
+	padding: 51px;
 }
 
-.pSt strong{
+.pSt strong {
 	font-size: 26px;
-    	line-height: 55px
+	line-height: 55px;
 }
-
 
 #profilePicM+div+div+.xpBar {
 	position: fixed;
@@ -346,53 +309,48 @@ input:checked+.sliderSml{
 	left: 350px;
 	right: unset;
 	top: 305px;
-	height: 20px!Important
+	height: 20px!Important;
 }
 
 #profilePicM+div+div+.xpBar>.xpBarB {
-	background-color: var(--accent)
+	background-color: var(--accent);
 }
 
 #profilePicM+div+div+.xpBar>.xpBarV {
-	margin-top: -6px
+	margin-top: -6px;
 }
 
 div[style*="height:15px;margin-top:30px;border-top:4px solid rgba(255, 255, 255, 0.8);"] {
-	border-color: transparent!important
+	border-color: transparent!important;
 }
 
 a.menuLink {
-	color: var(--text-color)
+	color: var(--text-color);
 }
 
 #clanErr>.setHed {
-	display: block!important
+	display: block!important;
 }
-
-
-/* Shop */
 
 #mdSrch.smlInput {
 	position: relative!important;
-	width: calc(100% - 120px)!Important
+	width: calc(100% - 120px)!Important;
 }
 
-#spinRespin,
-.button.btnRespin {
-	display: none!important
+#spinRespin, .button.btnRespin {
+	display: none!important;
 }
 
 .bigMenTab[onclick*="windows[13].switchTab(4)"] {
-	display: none
+	display: none;
 }
 
-.mapAgeD,
-.shopSale {
+.mapAgeD, .shopSale {
 	background-color: #0000 !important;
 	position: absolute;
 	left: -1px;
 	top: 1px;
-	font-size: 0
+	font-size: 0;
 }
 
 .mapAgeD::after {
@@ -418,7 +376,7 @@ a.menuLink {
 	font-size: 12px;
 	top: 8px;
 	left: -7px;
-	transform: rotate(-47deg)
+	transform: rotate(-47deg);
 }
 
 .shopSale::after {
@@ -431,18 +389,16 @@ a.menuLink {
 	background-color: red;
 	clip-path: polygon(50% 0%, 0% 60%, 100% 70%);
 	z-index: -1;
-	transform: rotate(-3deg)
+	transform: rotate(-3deg);
 }
 
-.shopCard[onclick*="buyPremium(3)"]>.shopSale,
-.shopCard[onclick="showPurchase(5)"]>.shopSale {
+.shopCard[onclick*="buyPremium(3)"]>.shopSale, .shopCard[onclick="showPurchase(5)"]>.shopSale {
 	top: 10px;
 	left: -9px;
-	font-size: 10px
+	font-size: 10px;
 }
 
-.shopCard[onclick*="buyPremium(3)"]>.shopSale::after,
-.shopCard[onclick="showPurchase(5)"]>.shopSale::after {
+.shopCard[onclick*="buyPremium(3)"]>.shopSale::after, .shopCard[onclick="showPurchase(5)"]>.shopSale::after {
 	content: '';
 	position: absolute;
 	top: -25px;
@@ -452,34 +408,28 @@ a.menuLink {
 	background-color: red;
 	clip-path: polygon(50% 0%, 0% 60%, 100% 70%);
 	z-index: -1;
-	transform: rotate(-3deg)
+	transform: rotate(-3deg);
 }
-
-
-/* things you get with premium tab */
 
 [style="background-color:#333;padding:15px;border-radius:6px;border:5px solid var(--yellow)"] {
 	border-color: var(--accent)!important;
-	background-color: var(--aesthetics)!important
+	background-color: var(--aesthetics)!important;
 }
 
 [style="background-color:#333;padding:15px;border-radius:6px;border:5px solid var(--yellow)"] .material-icons {
-	color: var(--accent)!important
+	color: var(--accent)!important;
 }
 
-
-/* challenges */
-
 .setBodH>.xpBar {
-	height: 20px!Important
+	height: 20px!Important;
 }
 
 .setBodH>.xpBar>.xpBarB {
-	background-color: var(--accent)
+	background-color: var(--accent);
 }
 
 .setBodH>.xpBar>.xpBarV {
-	margin-top: 2px
+	margin-top: 2px;
 }
 
 .chalCard {
@@ -503,7 +453,7 @@ a.menuLink {
 .chalImgC {
 	border-radius: 0;
 	background-color: transparent;
-	filter: drop-shadow(5px 5px 0px #000)
+	filter: drop-shadow(5px 5px 0px #000);
 }
 
 .chalDesc {
@@ -515,9 +465,6 @@ a.menuLink {
 	display: block;
 	margin: 0;
 }
-
-
-/* maps */
 
 div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatName {
 	position: relative;
@@ -532,14 +479,13 @@ div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatDesc {
 	top: calc(50% - 30px);
 }
 
-div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatPBtn,
-div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatHBtn {
+div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatPBtn, div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatHBtn {
 	position: relative;
 	float: right;
 	z-index: 999;
 	font-size: 0;
 	padding-left: 0;
-	padding-right: 0
+	padding-right: 0;
 }
 
 div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatPBtn {
@@ -559,7 +505,7 @@ div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatHBtn {
 }
 
 .mapListThumb {
-	width: 261px
+	width: 261px;
 }
 
 .mFeatSepar {
@@ -572,7 +518,7 @@ div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatHBtn {
 	width: max-content;
 	transform: translateX(-50%);
 	text-align: left;
-	border-radius: 0
+	border-radius: 0;
 }
 
 .mapActionOvrl {
@@ -585,11 +531,11 @@ div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatHBtn {
 }
 
 #mapList>.smlInput {
-	width: calc(100% - 400px)!important
+	width: calc(100% - 400px)!important;
 }
 
 #mpCat {
-	height: 40px
+	height: 40px;
 }
 
 #mapList>.searchBtn {
@@ -598,11 +544,8 @@ div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatHBtn {
 
 #mapList>.searchBtn .material-icons {
 	font-size: 27px!Important;
-	margin-top: -16px!Important
+	margin-top: -16px!Important;
 }
-
-
-/* Mods */
 
 .bigMFeatHold>#bigMFeatName {
 	position: relative;
@@ -617,14 +560,13 @@ div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatHBtn {
 	top: calc(50% - 30px)!important;
 }
 
-.bigMFeatHold>#bigMFeatPBtn,
-.bigMFeatHold>#bigMFeatHBtn {
+.bigMFeatHold>#bigMFeatPBtn, .bigMFeatHold>#bigMFeatHBtn {
 	position: relative;
 	float: right;
 	z-index: 999;
 	font-size: 0;
 	padding-left: 0;
-	padding-right: 0
+	padding-right: 0;
 }
 
 .bigMFeatHold>#bigMFeatPBtn {
@@ -632,16 +574,13 @@ div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatHBtn {
 	top: -0px!important;
 }
 
-
-/* settings */
-
 .settingsHeader {
-	position: relative
+	position: relative;
 }
 
 .settingTab {
 	background-color: var(--aesthetics) !important;
-	transition-duration: var(--duration)
+	transition-duration: var(--duration);
 }
 
 #settingsTabLayout * {
@@ -650,48 +589,46 @@ div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatHBtn {
 }
 
 #settingsTabLayout div {
-	color: var(--text-color)
+	color: var(--text-color);
 }
 
 #settingsTabLayout div:hover {
-	color: var(--accent)!important
+	color: var(--accent)!important;
 }
 
 .settingTab.tabANew {
-	color: var(--accent)!important
+	color: var(--accent)!important;
 }
 
-#menuWindow.dark,
-.settingsHeader {
-	background: #0e0e0e !important
+#menuWindow.dark, .settingsHeader {
+	background: #0e0e0e !important;
 }
 
 #menuWindow * {
-	border: hidden
+	border: hidden;
 }
 
 .setHed {
-	display: none
+	display: none;
 }
 
 .setBodH {
-	border-radius: 0
+	border-radius: 0;
 }
 
-.setHed,
-.setHedS {
+.setHed, .setHedS {
 	display: block!important;
 	background-color: var(--aesthetics)!important;
 	height: 30px;
 	border-radius: 0;
 	width: calc(100% - 35px);
-	margin-left: 6px
+	margin-left: 6px;
 }
 
 .settName {
 	color: var(--text-color)!important;
 	padding: 5px 7px;
-	transition-duration: 150ms
+	transition-duration: 150ms;
 }
 
 .settName:hover {
@@ -703,18 +640,16 @@ div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatHBtn {
 	width: 30px;
 	justify-content: center;
 	align-items: center;
-	text-align: center
+	text-align: center;
 }
 
-.slider,
-.slider2 {
+.slider, .slider2 {
 	border-radius: 56px;
 	width: 32px;
 	background: transparent!Important;
 }
 
-.slider::before,
-.slider2::before {
+.slider::before, .slider2::before {
 	text-align: center;
 	transform: none!important;
 	font-family: 'Material Icons';
@@ -725,43 +660,22 @@ div[style*="margin-top:15px;margin-bottom:15px"]+.bigMFeatHold>#bigMFeatHBtn {
 	-webkit-text-stroke: 3px #fff;
 }
 
-input:checked+.slider,
-input:checked+.slider2 {
-	background-color: var(--accent)
+input:checked+.slider, input:checked+.slider2 {
+	background-color: var(--accent);
 }
 
-input:focus+.slider,
-input:focus+.slider2 {
-	box-shadow: 0 0 1px var(--accent)
+input:focus+.slider, input:focus+.slider2 {
+	box-shadow: 0 0 1px var(--accent);
 }
 
-input:checked+.slider::before,
-input:checked+.slider2::before {
+input:checked+.slider::before, input:checked+.slider2::before {
 	font-family: 'Material Icons';
 	content: 'circle';
 	color: transparent;
 	-webkit-text-stroke: 3px var(--accent);
 }
 
-#activateKDM,
-.accountButton,
-.loadoutBtn,
-.settingsBtn,
-.subPassChg,
-.lnkTw,
-.creatorCodeBtn,
-.redVouchBtn,
-#hostMenuBtn,
-.hostCBtn,
-.advancedToggle[style*=background-color],
-.updDisN,
-.searchBtn,
-.quickJoin,
-.rnkShpBtn,
-.hostPresetBtn,
-.hostToggle,
-#declineBtn,
-.punishButton {
+#activateKDM, .accountButton, .loadoutBtn, .settingsBtn, .subPassChg, .lnkTw, .creatorCodeBtn, .redVouchBtn, #hostMenuBtn, .hostCBtn, .advancedToggle[style*=background-color], .updDisN, .searchBtn, .quickJoin, .rnkShpBtn, .hostPresetBtn, .hostToggle, #declineBtn, .punishButton {
 	color: #fff !important;
 	background: var(--accent) !Important;
 	transition-duration: var(--duration) !important;
@@ -772,23 +686,7 @@ input:checked+.slider2::before {
 	box-shadow: inset 0 -7px 0 0 var(--button-shadow) !important;
 }
 
-.accountButton:hover,
-.loadoutBtn:hover,
-.settingsBtn:hover,
-.subPassChg:hover,
-.lnkTw:hover,
-.creatorCodeBtn:hover,
-.redVouchBtn:hover,
-#hostMenuBtn:hover,
-.hostCBtn:hover,
-.updDisN:hover,
-.searchBtn:hover,
-.quickJoin:hover,
-.rnkShpBtn:hover,
-.hostPresetBtn:hover,
-.hostToggle:hover,
-#declineBtn:hover,
-.punishButton:hover {
+.accountButton:hover, .loadoutBtn:hover, .settingsBtn:hover, .subPassChg:hover, .lnkTw:hover, .creatorCodeBtn:hover, .redVouchBtn:hover, #hostMenuBtn:hover, .hostCBtn:hover, .updDisN:hover, .searchBtn:hover, .quickJoin:hover, .rnkShpBtn:hover, .hostPresetBtn:hover, .hostToggle:hover, #declineBtn:hover, .punishButton:hover {
 	background-color: var(--aesthetics)!important;
 	color: var(--accent);
 }
@@ -796,14 +694,14 @@ input:checked+.slider2::before {
 .sliderVal {
 	margin-top: -2px!important;
 	border: hidden!Important;
-	border-radius: 0
+	border-radius: 0;
 }
 
 .sliderM {
 	border-radius: 4px;
 	height: 5px;
 	background-color: var(--background)!important;
-	margin-top: 8px!important
+	margin-top: 8px!important;
 }
 
 .sliderM::-webkit-slider-thumb {
@@ -814,18 +712,18 @@ input:checked+.slider2::before {
 	border-radius: 0px;
 	transform: rotate(45deg);
 	background: var(--accent);
-	cursor: pointer
+	cursor: pointer;
 }
 
 input {
 	height: 25px;
 	background-color: var(--aesthetics)!important;
 	color: var(--text-color)!important;
-	transition-duration: var(--duration)
+	transition-duration: var(--duration);
 }
 
 input::placeholder {
-	color: var(--text-color)!important
+	color: var(--text-color)!important;
 }
 
 select {
@@ -834,28 +732,25 @@ select {
 	color: var(--text-color)!important;
 	padding: 0!Important;
 	transition-duration: var(--duration);
-	border: hidden!important
+	border: hidden!important;
 }
 
 select option {
 	background-color: var(--background);
-	color: var(--text-color)!important
+	color: var(--text-color)!important;
 }
 
 select:focus-within {
-	transform: scale(1.1)
+	transform: scale(1.1);
 }
 
 select::-webkit-scrollbar {
-	display: none
+	display: none;
 }
-
-
-/* inner misc */
 
 #settSearch {
 	background-color: transparent;
-	color: var(--text-color)
+	color: var(--text-color);
 }
 
 .settingsHeader>div[style*="display:inline-block;"]:nth-child(2)::before {
@@ -874,14 +769,10 @@ select::-webkit-scrollbar {
 }
 
 #settSearch::placeholder {
-	color: var(--text-color)
+	color: var(--text-color);
 }
 
-
-/* server */
-
-.serverHeader,
-.serverHeader>.setBodH {
+.serverHeader, .serverHeader>.setBodH {
 	background-color: transparent;
 	position: relative;
 }
@@ -889,35 +780,31 @@ select::-webkit-scrollbar {
 #serverHolder .setHed {
 	display: block;
 	background-color: var(--aesthetics);
-	border-radius: 0
+	border-radius: 0;
 }
 
-#serverHolder .setHed .plusOrMinus+span,
-.carousel {
-	display: none
+#serverHolder .setHed .plusOrMinus+span, .carousel {
+	display: none;
 }
 
 .serverPing {
 	margin-top: 4px!important;
-	font-size: 19px!important
+	font-size: 19px!important;
 }
 
 .quickJoin {
-	margin-top: 5px
+	margin-top: 5px;
 }
 
-
-/* Host */
-
 .formInput[style="border:none;background:#eee;padding-bottom:6px;float:left;margin-top:5px;margin-bottom:5px;"] {
-	margin-top: -6px!important
+	margin-top: -6px!important;
 }
 
 .serverHostOp {
 	position: relative;
 	left: calc(50% - 500px);
 	top: calc(50% - 250px);
-	transition-duration: var(--duration)
+	transition-duration: var(--duration);
 }
 
 div.serverHostOp {
@@ -934,28 +821,23 @@ div.serverHostOp {
 .serverHostOp:hover {
 	transform: scale(1.04);
 	background-size: 100%;
-	background-position: center
+	background-position: center;
 }
 
 .serverHostOpH {
-	transform: translateY(50px)
+	transform: translateY(50px);
 }
-
-
-/* I */
 
 .hostMap * {
-	transition-duration: var(--duration)
+	transition-duration: var(--duration);
 }
 
-.hostMapYear,
-.hostMapBy,
-.hostMapVersion {
-	display: none
+.hostMapYear, .hostMapBy, .hostMapVersion {
+	display: none;
 }
 
 .hostMap:hover .hostMapName {
-	opacity: 0
+	opacity: 0;
 }
 
 .hostMapName {
@@ -967,54 +849,46 @@ div.serverHostOp {
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	line-height: 90px
+	line-height: 90px;
 }
 
-
-/* II */
-
-.hostOpt,
-.optCheck {
+.hostOpt, .optCheck {
 	background: var(--aesthetics);
 	border: hidden!Important;
 	transition-duration: var(--duration);
 }
 
-.hostOpt:hover,
-.optCheck:hover {
-	background-color: var(--background)!important
+.hostOpt:hover, .optCheck:hover {
+	background-color: var(--background)!important;
 }
 
 .hostOpt {
-	border: hidden
+	border: hidden;
 }
 
 input:checked+.optCheck {
-	background-color: var(--accent)
+	background-color: var(--accent);
 }
 
 #forcedSettings>[style="margin-top:5px"]:nth-child(4)>.hostOpt {
 	border-radius: 2px;
 	width: 35px!important;
 	height: 35px!Important;
-	margin-right: 5px!important
+	margin-right: 5px!important;
 }
 
 .optImg {
 	height: 45px;
-	width: 45px
+	width: 45px;
 }
 
 #forcedSettings>[style="margin-top:5px"]:nth-child(4)>.hostOpt>.optName {
-	display: none
+	display: none;
 }
 
 #forcedSettings>.setHed {
 	display: block!important;
 }
-
-
-/* ranked */
 
 .bigMenTabs+.bigMFeatHold>#bigMFeatName {
 	position: relative;
@@ -1029,62 +903,51 @@ input:checked+.optCheck {
 	z-index: 999;
 	font-size: 0;
 	padding-left: 0;
-	padding-right: 0
+	padding-right: 0;
 }
 
 .bigMFeatHold>#bigMFeatHBtnD {
 	left: 40px!important;
 	top: calc(50%)!important;
-	width: 150px
+	width: 150px;
 }
-
-
-/* Join */
 
 #gameURL.accountInput {
 	position: absolute;
 	width: calc(100% - 300px);
 	top: calc(50% - 50px);
-	height: 50px
+	height: 50px;
 }
 
 .accountButton[onclick*="joinGame()"] {
 	position: absolute;
 	width: calc(100% - 300px)!important;
-	top: calc(50% - 0px)
+	top: calc(50% - 0px);
 }
 
-
-/* Customize */
-
-#selectorContainer,
-.selectorItem {
+#selectorContainer, .selectorItem {
 	background-color: transparent;
-	transition-duration: var(--duration)
+	transition-duration: var(--duration);
 }
 
 .selectorItem:hover {
-	background-color: var(--aesthetics)
+	background-color: var(--aesthetics);
 }
 
 .custContainer {
-	width: calc(50% - 32px)
+	width: calc(50% - 32px);
 }
-
-
-/* II Select Classes */
 
 .classCard {
-	background-color: var(--aesthetics)
+	background-color: var(--aesthetics);
 }
 
-.classWeap,
-.classHP {
-	visibility: hidden
+.classWeap, .classHP {
+	visibility: hidden;
 }
 
 .classXPBar {
-	margin-top: -10px
+	margin-top: -10px;
 }
 
 .classLvl {
@@ -1095,14 +958,10 @@ input:checked+.optCheck {
 }
 
 .clsXPBarC {
-	background-color: var(--accent)
+	background-color: var(--accent);
 }
 
-
-/* Skin Select */
-
-.skinCard,
-.noBtnCard {
+.skinCard, .noBtnCard {
 	border-radius: 4px;
 	border-width: 0 !important;
 	background-color: var(--aesthetics);
@@ -1125,27 +984,23 @@ input:checked+.optCheck {
 	color: #fff !important;
 	height: 140px;
 	transform: translateY(10px);
-	background-color: var(--background)
+	background-color: var(--background);
 }
 
 .skinCard:hover img {
 	filter: grayscale(0);
 }
 
-.selctInfoBtn,
-.itemCnt::after {
+.selctInfoBtn, .itemCnt::after {
 	background-color: var(--accent) !important;
 }
 
-.selctInfoBtn,
-.selctFavBtn,
-.itemCnt::after {
-	font-size: 18px!Important
+.selctInfoBtn, .selctFavBtn, .itemCnt::after {
+	font-size: 18px!Important;
 }
 
-.skinCard:hover>.selctInfoBtn,
-.skinCard:hover>.selctFavBtn {
-	transform: translateY(-14px)
+.skinCard:hover>.selctInfoBtn, .skinCard:hover>.selctFavBtn {
+	transform: translateY(-14px);
 }
 
 .selctInfoBtn {
@@ -1154,14 +1009,14 @@ input:checked+.optCheck {
 }
 
 [data-col=yellow] {
-	color: var(--aesthetics)!important
+	color: var(--aesthetics)!important;
 }
 
 .selctFavBtn {
 	transform: translateY(14px);
 	background-color: var(--accent);
 	padding: 1px;
-	transition-duration: var(--duration)
+	transition-duration: var(--duration);
 }
 
 .skinRandom.blackShad {
@@ -1172,8 +1027,7 @@ input:checked+.optCheck {
 	text-shadow: none;
 }
 
-.itemSea,
-.itemOwn {
+.itemSea, .itemOwn {
 	font-size: 0;
 }
 
@@ -1194,15 +1048,9 @@ input:checked+.optCheck {
 	filter: grayscale(0);
 }
 
-
-/* Mail Obj */
-
 .mailObj[style*="border"] {
-	border-color: var(--accent)!important
+	border-color: var(--accent)!important;
 }
-
-
-/* Menu Item Container */
 
 #menuItemContainer {
 	display: flex;
@@ -1216,7 +1064,7 @@ input:checked+.optCheck {
 	transform: translateX(-50%);
 	width: 80%;
 	padding: 0px 152px;
-	/*box-shadow: inset 0px 0px 175px 2px var(--aesthetics)*/
+	;
 }
 
 #menuItemContainer::before {
@@ -1229,7 +1077,7 @@ input:checked+.optCheck {
 	transform: none!important;
 	left: -172px;
 	top: 0;
-	background-image: linear-gradient(0deg, #0c0c0c -20%, #151515 100%)
+	background-image: linear-gradient(0deg, #0c0c0c -20%, #151515 100%);
 }
 
 .menuItem {
@@ -1253,15 +1101,15 @@ input:checked+.optCheck {
 
 .menuItem:hover>.menuItemTitle {
 	color: #fff !important;
-	transform: scale(.91)
+	transform: scale(.91);
 }
 
 #menuBtnChall {
-	font-size: 24px!important
+	font-size: 24px!important;
 }
 
 .menuItemIcon {
-	display: none
+	display: none;
 }
 
 #menuBtnProfile {
@@ -1273,64 +1121,9 @@ input:checked+.optCheck {
 	font-size: 26px;
 }
 
-
-/* Translated Buttons */
-
-
-/*
-#menuBtnProfile,
-#menuBtnShop,
-#menuBtnChall,
-#menuBtnSocial,
-#menuBtnMaps,
-#menuBtnMods,
-#menuBtnSettings {
-     
-}
-
-.menuItem div:nth-child(2)::after{
-    visibility: visible;
-    font-size: 24px;
-    display: block;
-    transform: translateY(-115px)
-}
-
-#menuBtnProfile::after {
-    content: '横顔';
-}
-
-#menuBtnShop::after {
-    content: '店舗';
-}
-
-#menuBtnChall::after {
-    content: '挑戦';
-}
-
-#menuBtnSocial::after {
-    content: '遠見';
-}
-
-#menuBtnMaps::after {
-    content: '地図';  
-}
-
-#menuBtnMods::after {
-    content: '変形'; 
-}
-
-#menuBtnSettings::after {
-    content: '設定';   
-}
-*/
-
-
-/* Sublogo Buttons */
-
 #subLogoButtons {
 	display: flex;
 	flex-direction: row;
-	/*background-color: var(--background);*/
 	height: 150px;
 	bottom: -1px;
 	left: 50%;
@@ -1338,8 +1131,7 @@ input:checked+.optCheck {
 	width: 80%;
 	justify-content: space-around;
 	align-items: center;
-	z-index: 999999
-	/*box-shadow: inset 0px 0px 175px 30px var(--aesthetics)*/
+	z-index: 999999;
 }
 
 #subLogoButtons::after {
@@ -1350,7 +1142,7 @@ input:checked+.optCheck {
 	height: 154px;
 	z-index: -9;
 	transform: none!important;
-	background-image: linear-gradient(180deg, #0c0c0c -20%, #151515 100%)
+	background-image: linear-gradient(180deg, #0c0c0c -20%, #151515 100%);
 }
 
 #subLogoButtons>.button {
@@ -1370,77 +1162,19 @@ input:checked+.optCheck {
 	color: #fff;
 }
 
-.button.small,
-.shopCard,
-#spinRespin,
-.serverHostOp,
-.rnkShpBtn,
-.hostMapName,
-.optName,
-.classLvl,
-.classHP,
-#confirmBtn,
-#declineBtn,
-#specGameInfo,
-#specTimer {
+.button.small, .shopCard, #spinRespin, .serverHostOp, .rnkShpBtn, .hostMapName, .optName, .classLvl, .classHP, #confirmBtn, #declineBtn, #specGameInfo, #specTimer {
 	text-shadow: 0px -1px 0px black, 0px 1px 0px black, 1px 0px 0px black, -1px 0px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black, -1px -1px 0px black!Important;
 }
-
-
-/* translated */
-
-
-/*
-#menuBtnHost,
-#menuBtnBrowser,
-#menuBtnRanked,
-#menuBtnJoin,
-#inviteButton {
-    font-size: 0!important;
-}
-
-#subLogoButtons>div:not(:first-child)::after{
-    visibility: visible;
-    font-size: 22px;
-    display: block;
-    transform: translateY(-112px)
-}
-
-#menuBtnHost::after {
-    content: 'ホスト';
-}
-
-#menuBtnBrowser::after {
-    content: 'サーバ';
-}
-
-#menuBtnRanked::after {
-    content: '位する';
-}
-
-#inviteButton::after {
-    content: '招待する';
-}
-
-#menuBtnJoin::after {
-    content: '加わる';
-}
-*/
-
-
-/* Bot Right
-
-I: Terms Info */
 
 #termsInfo {
 	background: transparent;
 	position: fixed;
 	left: 5px;
-	bottom: 0
+	bottom: 0;
 }
 
 .verticalSeparatorInline {
-	display: none
+	display: none;
 }
 
 .terms {
@@ -1451,74 +1185,61 @@ I: Terms Info */
 }
 
 #termsInfo:hover>.terms {
-	color: var(--accent)
+	color: var(--accent);
 }
 
 .terms:not(:last-child) {
 	transform: translateY(84px);
-	opacity: 0
+	opacity: 0;
 }
 
 #termsInfo:hover>.terms {
 	transform: translateY(30px);
 	opacity: 1;
-	margin-bottom: 8px!important
+	margin-bottom: 8px!important;
 }
 
 #termsInfo:hover>.terms:last-child {
 	transform: translateY(-50px);
 }
 
-.terms[onclick="openTab('./docs/terms.txt')"],
-.terms:nth-child(5)+.verticalSeparatorInline {
-	display: none!important
+.terms[onclick="openTab('./docs/terms.txt')"], .terms:nth-child(5)+.verticalSeparatorInline {
+	display: none!important;
 }
 
 .terms[onclick*="showWindow(35)"]+.verticalSeparatorInline {
-	display: none!important
+	display: none!important;
 }
-
-
-/* Bot Right
-
-II: Mod Vote */
 
 #mapInfoHolder {
 	bottom: 140px;
-	z-index: 99
+	z-index: 99;
 }
 
-#mapVote,
-#modVoteHold {
-	display: none
+#mapVote, #modVoteHold {
+	display: none;
 }
 
 .vote {
-	font-size: 28px!Important
+	font-size: 28px!Important;
 }
 
 .voteHint {
 	background-color: var(--accent)!important;
 	font-size: 0;
-	border-radius: 4px
+	border-radius: 4px;
 }
 
 .voteHint::before {
 	content: 'Donate KR';
-	font-size: 12px
+	font-size: 12px;
 }
-
-
-/* Bot right end */
-
-
-/* Chat */
 
 #uiBase.onMenu #chatHolder {
 	left: 0;
 	bottom: 50%;
 	transform: translateY(50%) translateX(-500px);
-	transition-duration: var(--duration)
+	transition-duration: var(--duration);
 }
 
 #uiBase.onMenu #chatHolder:focus-within {
@@ -1527,32 +1248,27 @@ II: Mod Vote */
 
 #chatList[style*="max-height"] {
 	max-height: 150px!important;
-	border-radius: 0!important
+	border-radius: 0!important;
 }
 
 .chatMsg[style*="#fc03ec"] {
-	/* magenta system msg */
 	color: var(--accent)!important;
 }
 
 .chatMsg [style*="#9eeb56"] {
-	/* lightgreen player highlight */
 	color: var(--accent)!important;
 }
 
 .chatItem {
-	background: transparent!important
+	background: transparent!important;
 }
 
 .weaponChatIcon {
 	filter: brightness(0) drop-shadow(-2px 0px 1px var(--accent)) drop-shadow(2px 0px 1px var(--accent));
 }
 
-
-/* input */
-
 #chatSwitch {
-	display: none!Important
+	display: none!Important;
 }
 
 #chatInputHolder {
@@ -1562,13 +1278,13 @@ II: Mod Vote */
 	opacity: 0;
 	height: 0;
 	transition-duration: var(--duration);
-	transition-delay: 150ms
+	transition-delay: 150ms;
 }
 
 #chatInputHolder:focus-within {
 	opacity: 1;
 	height: 45px;
-	transition-delay: 0ms
+	transition-delay: 0ms;
 }
 
 #chatInput {
@@ -1578,22 +1294,19 @@ II: Mod Vote */
 	border-radius: 0px;
 	opacity: 0;
 	margin-left: -50px!important;
-	transition-duration: var(--duration)
+	transition-duration: var(--duration);
 }
 
 #chatInputHolder:focus-within>#chatInput {
 	opacity: 1;
-	transition-delay: 150ms
+	transition-delay: 150ms;
 }
-
-
-/* Trade Chat */
 
 #tradeChatHolder {
 	z-index: 99999999;
 	right: unset;
 	left: 165px;
-	width: 320px!important
+	width: 320px!important;
 }
 
 #tradeChatList {
@@ -1604,24 +1317,21 @@ II: Mod Vote */
 }
 
 .estOfferVal [style="color: rgba(0,0,0,0.7);"] {
-	color: var(--accent)!important
+	color: var(--accent)!important;
 }
 
 .tListN:not([style="background-color: rgb(92, 224, 90);"]) {
-	background-color: var(--accent)!important
+	background-color: var(--accent)!important;
 }
 
 .tradeChatItem {
 	font-size: 18px;
-	background-color: transparent!Important
+	background-color: transparent!Important;
 }
 
 #tradeChatInput {
-	margin-top: 5px
+	margin-top: 5px;
 }
-
-
-/*Universal Scroll Bar */
 
 *::-webkit-scrollbar {
 	width: 4px!important;
@@ -1636,11 +1346,8 @@ II: Mod Vote */
 	border-radius: 0px!important;
 }
 
-
-/* Menu Class Container */
-
 #menuClassNameTag {
-	display: none
+	display: none;
 }
 
 #menuClassContainer {
@@ -1668,50 +1375,44 @@ II: Mod Vote */
 }
 
 #customizeButton .material-icons {
-	font-size: 0!Important
+	font-size: 0!Important;
 }
 
-#menuClassName,
-#menuClassSubtext {
+#menuClassName, #menuClassSubtext {
 	text-shadow: 0px -1.6px 0px black, 0px 1.6px 0px black, 2px 0px 0px black, -2px 0px 0px black, 1.6px 2px 0px black, -1.6px 2px 0px black, 1.6px -2px 0px black, -1.6px -2px 0px black !important;
 	transform: translateY(50px);
 	opacity: 0;
-	transition-duration: var(--duration)
+	transition-duration: var(--duration);
 }
 
 #modDropper {
 	border: 5px dashed var(--aesthetics);
 	line-height: 120px;
-	margin: 0 20%
+	margin: 0 20%;
 }
 
 #modURL.accountInput {
-	width: calc(100% - 120px)!important
+	width: calc(100% - 120px)!important;
 }
 
 #menuClassSubtext {
 	transform: translateY(40px);
 }
 
-#menuClassContainer:hover>#menuClassName,
-#menuClassContainer:hover>#menuClassSubtext {
-	opacity: 1
+#menuClassContainer:hover>#menuClassName, #menuClassContainer:hover>#menuClassSubtext {
+	opacity: 1;
 }
 
 #policeButton {
 	opacity: 0;
 }
 
-
-/* Spec */
-
 #uiBase.onMenu #spectateUI {
 	display: block!IMportant;
 }
 
-#uiBase.onMenu #spectateUI>div:not(:nth-child(1)),
-#uiBase.onMenu #spectateUI>#spectateHUD>div:not(.spectateInfo) {
-	display: none!important
+#uiBase.onMenu #spectateUI>div:not(:nth-child(1)), #uiBase.onMenu #spectateUI>#spectateHUD>div:not(.spectateInfo) {
+	display: none!important;
 }
 
 #uiBase.onMenu #spectateUI>div:nth-child(1) {
@@ -1725,28 +1426,19 @@ II: Mod Vote */
 #uiBase.onMenu #spectateUI>div:nth-child(1)>.spectateInfo>#specTimer {
 	background: transparent;
 	color: white;
-	font-size: 39px
+	font-size: 39px;
 }
 
 #uiBase.onMenu #spectateUI>div:nth-child(1)>.spectateInfo>#specGameInfo {
 	color: var(--accent);
-	font-size: 24px
+	font-size: 24px;
 }
 
-#uiBase.onMenu #spectateUI>div:nth-child(1)>.spectateInfo>#specGameInfo,
-#uiBase.onMenu #spectateUI>div:nth-child(1)>.spectateInfo>#specTimer {
-	display: block
+#uiBase.onMenu #spectateUI>div:nth-child(1)>.spectateInfo>#specGameInfo, #uiBase.onMenu #spectateUI>div:nth-child(1)>.spectateInfo>#specTimer {
+	display: block;
 }
 
-
-/* Section II */
-
-
-/* Health */
-
-#hudClassIcon,
-#challIcon,
-#maxHP {
+#hudClassIcon, #challIcon, #maxHP {
 	display: none;
 }
 
@@ -1761,7 +1453,7 @@ II: Mod Vote */
 }
 
 #healthValueHolder::before {
-	display: none!important
+	display: none!important;
 }
 
 #healthBar {
@@ -1796,9 +1488,6 @@ II: Mod Vote */
 	width: 90px;
 }
 
-
-/* Ammo */
-
 #ammoDisplay {
 	background-color: transparent;
 	background-image: linear-gradient(#fff, #fff);
@@ -1811,11 +1500,11 @@ II: Mod Vote */
 	margin: 0!important;
 	border-radius: 0;
 	height: 65px!important;
-	background-position-y: -60px
+	background-position-y: -60px;
 }
 
 #ammoDisplay[style*="background-size: 0%"] {
-	background-size: 100% 100%!Important
+	background-size: 100% 100%!Important;
 }
 
 #ammoVal {
@@ -1823,31 +1512,28 @@ II: Mod Vote */
 	font-family: 'hpammo';
 	text-align: center;
 	width: 60px;
-	transform: translateX(5px) translateY(10px)
+	transform: translateX(5px) translateY(10px);
 }
-
-
-/* Weapon Display */
 
 #weapDisplay {
 	position: fixed;
 	left: unset;
 	right: calc(50% - 10px);
 	transform: translateX(50%)!important;
-	bottom: 20px
+	bottom: 20px;
 }
 
 .weapIcon {
 	filter: brightness(0) drop-shadow(-2px 0px 1px var(--accent)) drop-shadow(2px 0px 1px var(--accent));
 	transition-duration: 0.25s;
 	height: 0;
-	transform: translateY(250px)
+	transform: translateY(250px);
 }
 
 .weapIcon[style*="1"] {
 	opacity: 1 !important;
 	height: 70px;
-	transform: translateY(0px) rotate(0deg)
+	transform: translateY(0px) rotate(0deg);
 }
 
 #weapIconMel {
@@ -1857,16 +1543,6 @@ II: Mod Vote */
 .weapKey {
 	display: none;
 }
-
-
-/* Top Left 
-I: Timer
-II: Debug Info
-III: Current Game Info
-*/
-
-
-/* I */
 
 #timerDisplay {
 	margin: 0!important;
@@ -1879,18 +1555,15 @@ III: Current Game Info
 }
 
 #timerVal {
-	font-size: 48px
+	font-size: 48px;
 }
 
 #gameMessage {
 	position: fixed;
 	left: 50%;
 	transform: translateX(-50%);
-	top: 120px
+	top: 120px;
 }
-
-
-/* faceit, rounds */
 
 #roundsDisplay {
 	border-radius: 3px;
@@ -1898,19 +1571,15 @@ III: Current Game Info
 	margin-left: -20px;
 	margin-top: -20px;
 	padding-left: 5px!important;
-	padding-top: 5px!important
+	padding-top: 5px!important;
 }
 
-
-/* II */
-
-#fpsDisplay,
-#pingIcon {
+#fpsDisplay, #pingIcon {
 	visibility: hidden;
 }
 
 #fpsDisplay {
-	margin-bottom: 5px
+	margin-bottom: 5px;
 }
 
 #ingameFPS {
@@ -1924,31 +1593,13 @@ III: Current Game Info
 	font-size: 22px;
 }
 
-
-/* III */
-
-
-/* #curGameInfo{
-	position: fixed;
-	top: unset;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 0;
-} */
-
 #curGameInfo {
-	font-size: 0!important
+	font-size: 0!important;
 }
-
-
-/* Top Right */
-
-
-/* lead */
 
 #leaderDisplay {
 	border-radius: 0;
-	background-color: var(--game-bg)
+	background-color: var(--game-bg);
 }
 
 i[style*="color:#FBC02D"] {
@@ -1973,16 +1624,11 @@ i[style*="color:#40C4FF"]::before {
 	font-size: 20px;
 }
 
-.leaderName,
-.newLeaderName,
-.newLeaderNameF,
-.endTableN[style*='color: #eb5656;'] {
+.leaderName, .newLeaderName, .newLeaderNameF, .endTableN[style*='color: #eb5656;'] {
 	color: var(--accent) !important;
 }
 
-.newLeaderName,
-.newLeaderNameM,
-.newLeaderNameF {
+.newLeaderName, .newLeaderNameM, .newLeaderNameF {
 	color: var(--accent);
 }
 
@@ -1991,35 +1637,16 @@ i[style*="color:#40C4FF"]::before {
 	background-color: var(--game-bg);
 }
 
-
-/* counts */
-
-.topRightCounters div img,
-.topRightCounters div .material-icons {
-	display: none!Important
+.topRightCounters div img, .topRightCounters div .material-icons {
+	display: none!Important;
 }
 
-
-/* .topRightCounters{
-	width: max-content!Important;
-	float: right;
-	display: flex;
-    position: fixed;
-	flex-direction: column;
-	background-color: var(--game-bg);
-	padding: 8px 4px!important;
-	padding-bottom: 0px!important;
-	top: 50%!important;
-	transform: translateY(-50%);
-    right: 0
-} */
-
 .topRightCounters div {
-	border-radius: 0
+	border-radius: 0;
 }
 
 .topRightCounters div span {
-	color: var(--text-color)!important
+	color: var(--text-color)!important;
 }
 
 #deathsVal::before {
@@ -2046,59 +1673,47 @@ i[style*="color:#40C4FF"]::before {
 	content: 'KD: ';
 }
 
-
-/* Team Scores */
-
 #teamScores {
 	border-radius: 3px;
 	margin-left: -3px;
-	background-color: var(--game-bg)
+	background-color: var(--game-bg);
 }
 
 .tScoreT {
-	color: var(--text-color)
+	color: var(--text-color);
 }
 
 .tScoreC {
 	border-radius: 50%;
 	width: 12px;
-	height: 12px
+	height: 12px;
 }
 
 .material-icons.tScoreF {
-	display: none!important
+	display: none!important;
 }
 
 .tScoreM {
 	line-height: 1.2;
-	margin-left: 5px
+	margin-left: 5px;
 }
-
-
-/* Misc UIs */
-
-
-/* parkour */
 
 #speedRunBox {
 	border-radius: 3px;
-	background-color: var(--game-bg)
+	background-color: var(--game-bg);
 }
 
 #speedRunTimer {
-	color: var(--accent)
+	color: var(--accent);
 }
 
 #speedRunReset {
-	display: none!important
+	display: none!important;
 }
 
 #spdrnZC+i {
-	display: none!important
+	display: none!important;
 }
-
-
-/* End Board */
 
 #endTimer {
 	color: #fff;
@@ -2177,15 +1792,15 @@ i[style*="color:#40C4FF"]::before {
 .krInfo {
 	display: flex;
 	flex-direction: row;
-	align-items: center
+	align-items: center;
 }
 
 #teamSelector {
-	bottom: calc(50% - 120px)
+	bottom: calc(50% - 120px);
 }
 
 #instructions {
-	visibility: hidden
+	visibility: hidden;
 }
 
 #instructions::after {
@@ -2201,15 +1816,10 @@ i[style*="color:#40C4FF"]::before {
 }
 
 .menBtnIcn {
-	display: none!important
+	display: none!important;
 }
 
-
-/* first day update */
-
-.progressBarInner,
-.xpBarB,
-.chalXPBarC {
+.progressBarInner, .xpBarB, .chalXPBarC {
 	height: 100%;
 	background-image: linear-gradient(to right, var(--accent-color), var(--accent-color), 94%, white);
 }
@@ -2237,7 +1847,7 @@ i[style*="color:#40C4FF"]::before {
 #startServBtn[style]:hover::before {
 	background: var(--background)!important;
 	color: var(--accent)!important;
-	box-shadow: 0 0 0 black!important
+	box-shadow: 0 0 0 black!important;
 }
 
 #instructions {
@@ -2247,26 +1857,25 @@ i[style*="color:#40C4FF"]::before {
 #instructions::after {
 	position: fixed;
 	left: 50%;
-	transform: translateX(-50%) scale(1.5)
+	transform: translateX(-50%) scale(1.5);
 }
 
 #uiBase.onCompMenu #timerDisplay {
 	position: unset;
 	transform: unset;
-	padding: 10px
+	padding: 10px;
 }
 
 .killStreakItem {
-	background-color: var(--background)!important
+	background-color: var(--background)!important;
 }
 
 #killStreakHolder {
 	position: fixed;
 	right: 20px;
-	bottom: 150px
+	bottom: 150px;
 }
 
-.killStreakCnt,
-.killStreakItem>span {
+.killStreakCnt, .killStreakItem>span {
 	display: none!important;
 }
