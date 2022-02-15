@@ -262,30 +262,33 @@
 
 #uiBase.onMenu #spectButton {
     top: 200px;
-    RIGHT: unset;
-    left: 49%;
+    right: 50%;
     z-index: 9999999999999;
-    transform: translateX(50%);
+    transform: translateX(-50%);
     transition-duration: 350ms;
+	background-color: transparent;
+	width: max-content;
+	text-align: center;
+	padding: 0;
+	align-items: center;
 }
 
 #spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
 	color: transparent !important;
 }
 
-#spectButton .switchsml {
-	margin: 0;
-	position: absolute;
-	line-height: 10px
+.switchsml{
+	position: relative;
+	margin: 0 auto
 }
 
 .sliderSml {
 	opacity: 1;
-}
-
-#uiBase.onMenu #spectButton:hover {
-	transform: scale(0.95) translateY(0) translateX(30PX);
-	color: #000
+	background: transparent!important;
+	border-radius: 0;
+	float: right;
+	position: relative;
+	align-items: center;
 }
 
 .sliderSml::before {
@@ -294,23 +297,24 @@
 	color: var(--accent);
 	font-family: 'Material Icons Outlined';
 	background-color: transparent;
-	transition-duration: 350ms
+	width: 100PX;
+	margin: 0 26px;
+	text-align: center;
+	position: relative;
+	transition-duration: 350ms;	
 }
 
 input:checked+.sliderSml::before {
 	content: "visibility_off";
 	color: #7a7a7a;
-	transform: translateX(0px);
+	transform: unset;
+	background: transparent!important;
 }
 
-input:checked+.sliderSml {
-	background-color: transparent !important;
+input:checked+.sliderSml{
+	background: transparent!important
 }
 
-.sliderSml {
-	opacity: 1;
-	background-color: transparent;
-}
 /* Profile */
 
 .setBodH[style*="width:680px"]{
